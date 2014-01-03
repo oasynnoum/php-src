@@ -28,6 +28,8 @@ var SYSTEM_DRIVE = WshShell.Environment("Process").Item("SystemDrive");
 var PROGRAM_FILES = WshShell.Environment("Process").Item("ProgramFiles");
 var DSP_FLAGS = new Array();
 var PHP_SRC_DIR=FSO.GetParentFolderName(WScript.ScriptFullName);
+var PHP_PGI = "no";
+var PHP_PGO = "no";
 
 /* Store the enabled extensions (summary + QA check) */
 var extensions_enabled = new Array();
